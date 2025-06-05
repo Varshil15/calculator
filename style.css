@@ -131,7 +131,7 @@ body {
     max-width: 350px;
     min-height: 80vh;
     height: auto;
-    border-radius: 0 0 20px 20px;
+    border-radius: 28px;
     padding: 10px 0 30px 0;
     box-shadow: 0 4px 24px 0 rgba(76,161,175,0.18), 0 1.5px 8px 0 rgba(44,62,80,0.10);
     border: 2.5px solid #4ca1af;
