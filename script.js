@@ -14,9 +14,15 @@ function clearDisplay() {
   display.innerText = "0";
 }
 
+function clearHistory() {
+  history = [];
+  renderHistory();
+}
+
+// Update renderHistory to add a clear button
 function renderHistory() {
   if (!historyDiv) return;
-  let html = '<h3>History</h3><ul class="history-list">';
+  let html = '<div style="display:flex;align-items:center;justify-content:space-between;"><h3>History</h3><button onclick="clearHistory()" style="background:#222;color:#fff;border:none;border-radius:6px;padding:2px 10px;font-size:0.95em;cursor:pointer;transition:background 0.2s;">Clear</button></div><ul class="history-list">';
   if (history.length === 0) {
     html += '<li style="color:#666;">No history</li>';
   } else {
