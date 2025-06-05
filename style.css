@@ -176,3 +176,63 @@ body {
   }
 }
 
+/* Calculator wrapper for layout */
+.calculator-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.history {
+  width: 180px;
+  min-height: 400px;
+  background: rgba(30,30,30,0.95);
+  border-radius: 16px;
+  border: 1.5px solid #222;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.25);
+  color: #f0f0f0;
+  font-size: 1rem;
+  padding: 16px 10px 16px 16px;
+  overflow-y: auto;
+  margin-left: 0;
+  margin-top: 0;
+  transition: background 0.3s;
+}
+.history h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  color: #4ca1af;
+  font-weight: 600;
+}
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.history-list li {
+  margin-bottom: 8px;
+  word-break: break-all;
+  color: #ccc;
+}
+
+@media (max-width: 800px) {
+  .calculator-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .history {
+    width: 98vw;
+    min-height: 80px;
+    margin-left: 0;
+    margin-top: 12px;
+    border-radius: 16px;
+    padding: 12px 8px 12px 12px;
+  }
+}
+
