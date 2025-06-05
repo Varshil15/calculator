@@ -210,14 +210,18 @@ body {
   background: rgba(30,30,30,0.95);
   border-radius: 16px;
   border: 1.5px solid #222;
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 8px 32px 0 rgba(76,161,175,0.25), 0 2px 8px 0 rgba(44,62,80,0.18), 0 1.5px 8px 0 rgba(44,62,80,0.10);
   color: #f0f0f0;
   font-size: 1rem;
   padding: 16px 10px 16px 16px;
   overflow-y: auto;
   margin-left: 0;
   margin-top: 0;
-  transition: background 0.3s;
+  transition: background 0.3s, box-shadow 0.35s cubic-bezier(.22,1,.36,1), transform 0.35s cubic-bezier(.22,1,.36,1);
+}
+.history:hover, .history:focus-within {
+  transform: translateY(-12px) scale(1.025);
+  box-shadow: 0 32px 64px 0 rgba(76,161,175,0.32), 0 8px 24px 0 rgba(44,62,80,0.22);
 }
 .history h3 {
   margin: 0 0 10px 0;
