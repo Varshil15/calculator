@@ -144,10 +144,18 @@ body {
   }
   .display {
     font-size: 1.5rem;
-    padding: 14px 10px;
-    border-radius: 0;
+    padding: 18px 10px;
+    border-radius: 18px 18px 8px 8px;
     margin-bottom: 12px;
     min-height: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 0 0 3px #4ca1af, 0 2px 8px 0 rgba(44,62,80,0.10);
+    background: #181f24cc;
+    color: #0f0;
+    border: none;
+    position: relative;
+    z-index: 2;
   }
   .buttons {
     gap: 6px;
